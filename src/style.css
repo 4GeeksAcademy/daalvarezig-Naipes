@@ -2,4 +2,73 @@
 
 body{
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 100px;
 }
+#card-zone {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+#card-container, #card-mazo {
+    display:block;
+}
+#card-container {
+  background: white;
+  position: relative;
+  width: 160px;
+  height: 230px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black; 
+}
+
+#card-mazo {
+    width: 160px;
+    height: 230px;
+    background-image: url('https://deckofcardsapi.com/static/img/back.png');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#card-mazo:hover {
+    transform: scale(1.05);
+}
+
+.card-symbol-top, .card-symbol-bottom {
+    position: absolute;
+    font-size: 3rem;
+}
+
+.card-symbol-top {
+    top: -15px;
+    left: 5px;
+}
+.card-symbol-bottom {
+    bottom: -15px;
+    right: 5px;
+    transform: rotate(180deg);
+}
+.card-value {
+    font-size: 5rem;
+    font-weight: bold;
+}
+footer {
+    margin-top: 20px;
+    font-size: 15px;
+    color: aquamarine
+}
+
